@@ -20,6 +20,10 @@ body {
     background-color: aqua;
 }
 
+ul {
+    list-style: none;
+}
+
 .icons {
     color: white;
     margin: 1em 0 0;
@@ -52,8 +56,25 @@ body {
     margin-left: 1.5em;
 }
 
+.ml-1 {
+    margin-left: 1em;
+}
+
+.mt {
+    margin-top: 1em;
+}
+
+/* TEST */
+.pl {
+    padding-left: 1em;
+}
+
 .fs {
     font-size: 14px;
+}
+
+.small-fs {
+    font-size: 10px;
 }
 
 /* MAIN */
@@ -93,7 +114,7 @@ nav {
 }
 
 .playlist {
-    margin: 1em 1.5em;
+    margin: 2em 1.5em;
 }
 
 .playlist button {
@@ -116,7 +137,7 @@ nav {
 }
 
 .download {
-    margin: 17em 1em 0 1em;
+    margin: 6em 1em 0 1em;
     padding-bottom: .5em;
     border-bottom: 1px solid gray;
 }
@@ -149,5 +170,86 @@ nav {
 footer {
     width: 100%;
     height: 97px;
-    background-color: yellow;
+    display: flex;
+    background-color: #282828;
+}
+
+.current-song {
+    width: calc(100%/3);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.play {
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1em;
+}
+
+.volume {
+    width: calc(100%/3);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* LEFT FOOTER-COL */
+.current-song img {
+    width: 50px;
+    height: 50px;
+    margin: 1.5em .5em;
+    vertical-align: middle;
+}
+
+/* CENTER FOOTER-COL */
+.play-stop i {
+    margin: .5em .5em;
+} 
+
+.play-btn {
+    border: 4px solid white;
+    border-radius: 50%;
+    margin: 1.5em 1em;
+}
+
+.song-duration {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.duration {
+    width: 400px;
+    border: 2px solid gray;
+    border-radius: 25px;
+}
+
+.white-duration {
+    width: 100px;
+    position: absolute;
+    bottom: 14px;
+    left: 52px;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+/* RIGHT FOOTER-COL */
+.volume-up {
+    width: 100px;
+    display: inline-block;
+    border: 2px solid gray;
+}
+
+.white-duration-2 {
+    width: 25px;
+    position: absolute;
+    bottom: 44px;
+    right: 95px;
+    border: 2px solid white;
+    border-radius: 25px;
 }
