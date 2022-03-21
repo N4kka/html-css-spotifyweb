@@ -22,17 +22,38 @@ body {
 
 .icons {
     color: white;
-    margin: 1em 1.5em;
+    margin: 1em 0 0;
+}
+
+.text-color {
+    color: gray;
+}
+
+.white {
+    color: white;
 }
 
 .size {
-    width: 20%;
+    width: 15%;
     vertical-align: middle;
 }
 
 .btn-description {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
+}
+
+.bl {
+    border-left: 2px solid yellowgreen;
+    padding-left: 20px;
+}
+
+.ml {
+    margin-left: 1.5em;
+}
+
+.fs {
+    font-size: 14px;
 }
 
 /* MAIN */
@@ -69,6 +90,50 @@ nav {
 .spotify-logo {
     width: 75%;
     margin: 1em 1em 0 1em;
+}
+
+.playlist {
+    margin: 1em 1.5em;
+}
+
+.playlist button {
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    margin: .5em .3em;
+    font-size: 2em;
+    font-weight: 500;
+    border: 0px;
+}
+
+.playlist .text-color {
+    font-size: 14px;
+    vertical-align: super;
+}
+
+.playlist p {
+    margin-bottom: .9em;
+}
+
+.download {
+    margin: 17em 1em 0 1em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid gray;
+}
+
+.download-btn {
+    width: 10%;
+    vertical-align: middle;
+    margin-right: .5em;
+}
+
+.profile {
+    margin: .5em 1em;
+}
+
+.profile-icon {
+    background-color: gray;
+    border-radius: 50%;
 }
 
 /* MAIN-CONTENT */
