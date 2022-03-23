@@ -30,30 +30,38 @@
                         <div class="spotify-logo">
                             <img src="img/logo.svg" alt="Spotify Logo">
                         </div>
-                        <div class="sidebar icons bl">
-                            <img class="size" src="img/home.svg" alt="Home Button">
-                            <span class="btn-description">Home</span>
-                        </div>
-                        <div class="sidebar icons ml">
-                            <img class="size" src="img/search.svg" alt="Search Button">
-                            <span class="btn-description text-color">Cerca</span>
-                        </div>
-                        <div class="sidebar icons ml">
-                            <img class="size" src="img/libreria.svg" alt="Your Library Button">
-                            <span class="btn-description text-color">La tua libreria</span>
-                        </div>
+                        <ul class="sidebar icons">
+                            <li>
+                                <a class="active" href="">
+                                    <img class="size" src="img/home.svg" alt="Home Button">
+                                    <span class="text-color fs" href="">Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img class="size" src="img/search.svg" alt="Search Button">
+                                    <span class="fs text-color" href="">Cerca</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img class="size" src="img/libreria.svg" alt="Your Library Button">
+                                    <span class="fs text-color" href="">La tua libreria</span>
+                                </a>
+                            </li>
+                        </ul>
                         <div class="playlist">
                             <h4 class="white">PLAYLIST</h4>
-                            <button>+</button>
-                            <span class="text-color btn-description">Crea Playlist</span>
+                            <button class="add">+</button>
+                            <span class="text-color fs">Crea Playlist</span>
                             <ul>
-                                <li class="text-color">Nome Playlist</li>
-                                <li class="text-color">Nome Playlist</li>
-                                <li class="text-color">Nome Playlist</li>
-                                <li class="text-color">Nome Playlist</li>
-                                <li class="text-color">Nome Playlist</li>
-                                <li class="text-color">Nome Playlist</li>
-                                <li class="text-color">Nome Playlist</li>
+                                <li class="btn-description text-color">Nome Playlist</li>
+                                <li class="btn-description text-color">Nome Playlist</li>
+                                <li class="btn-description text-color">Nome Playlist</li>
+                                <li class="btn-description text-color">Nome Playlist</li>
+                                <li class="btn-description text-color">Nome Playlist</li>
+                                <li class="btn-description text-color">Nome Playlist</li>
+                                <li class="btn-description text-color">Nome Playlist</li>
                             </ul>
                         </div>
                     </div>
@@ -74,12 +82,14 @@
             <!-- MAIN-CONTENT -->
             <section>
                 <header>
-                    <a class="upgrade">EFFETTUA L'UPGRADE</a>
+                    <a class="small-fs upgrade">EFFETTUA L'UPGRADE</a>
                 </header>
                 <div class="main-content">
                     <div class="menu">
                         <ul class="text-color fs">
-                            <li>IN EVIDENZA</li>
+                            <li>
+                               <a class="text-color" href="">IN E<span class="bb">VIDE</span>NZA</a>
+                            </li>
                             <li>PODCAST</li>
                             <li>CLASSIFICHE</li>
                             <li>GENERI E MOOD</li>
@@ -90,31 +100,37 @@
                     </div>
                     <div class="recently-played white">
                         <div id="first" class="last-played">
+                            <i class="hover-btn far fa-play-circle"></i>
                             <img src="img/metal_lifting.jpg" alt="Metal Playlist">
                             <h4>Heavy Metal</h4>
                             <p class="text-color fs">Subtitle</p>
                         </div>
                         <div class="last-played">
+                            <i class="hover-btn far fa-play-circle"></i>
                             <img src="img/stranger.jpeg" alt="Stranger Things Playlist">
                             <h4>Stranger Things, Vol. <br> 1 (a Netflix Original <br> Series Soundtrack)</h4>
                             <p class="text-color fs">Kyle Dixon & Michael Stein</p>
                         </div>
                         <div class="last-played">
+                            <i class="hover-btn far fa-play-circle"></i>
                             <img src="img/aquietplace.jpeg" alt="A Quiet Place Playlist">
                             <h4>A Quiet Place</h4>
                             <p class="text-color fs">Subtitle</p>
                         </div>
                         <div class="last-played">
+                            <i class="hover-btn far fa-play-circle"></i>
                             <img src="img/split.jpeg" alt="Split Playlist">
                             <h4>Split</h4>
                             <p class="text-color fs">Subtitle</p>
                         </div>
                         <div class="last-played">
+                            <i class="hover-btn far fa-play-circle"></i>
                             <img src="img/cure.jpeg" alt="Cure Playlist">
                             <h4>A cure for wellness</h4>
                             <p class="text-color fs">Subtitle</p>
                         </div>
                         <div class="last-played">
+                            <i class="hover-btn far fa-play-circle"></i>
                             <img src="img/sinister.jpeg" alt="Sinister Playlist">
                             <h4>Sinister</h4>
                             <p class="text-color fs">Subtitle</p>
@@ -130,7 +146,7 @@
                             <h4>Release Radar</h4>
                         </div>
                         <div class="release">
-                            <img src="img/mixdaily.jpeg" alt="Daily Mix 1">
+                            <img class="ml-1" src="img/mixdaily.jpeg" alt="Daily Mix 1">
                             <h4>Daily Mix 1</h4>
                         </div>
                     </div>
@@ -144,7 +160,7 @@
                             <h4>Lana del Rey</h4>
                         </div>
                         <div class="release">
-                            <img class="br" src="img/einaudi.jpeg" alt="Ludovico Einaudi">
+                            <img class="br ml-1" src="img/einaudi.jpeg" alt="Ludovico Einaudi">
                             <h4>Ludovico Einaudi</h4>
                         </div>
                     </div>
@@ -157,24 +173,27 @@
                 <footer>
                     <div class="current-song">
                         <img src="img/sinister.jpeg" alt="Sinister">
-                        <ul class="small-fs">
+                        <ul class="underline small-fs">
                             <li class="white btn-description">Sinister</li>
                             <li class="text-color">Brano Nome</li>
                         </ul>
-                        <span class="ml-3 white"><i class="far fa-heart"></i></span> <span class="white pl"><i class="far fa-folder"></i></span>
+                        <span class="ml-3 text-color"><i class="far fa-heart"></i></span> 
+                        <span class="pl text-color"><i class="far fa-folder"></i></span>
                     </div>
                     <div class="play buttons">
                         <div class="play-stop white">
                             <i class="fas fa-random"></i>
                             <i class="fas fa-step-backward"></i>
-                            <a class="play-btn"> <i class="fas fa-play"></i></a>
+                            <i class="play-btn far fa-play-circle"></i>
                             <i class="fas fa-step-forward"></i>
                             <i class="fas fa-redo"></i>
                         </div>
                         <div class="song-duration mt">
                             <span class="white small-fs">0:25</span>
                             <div class="duration ml"></div>
-                            <div class="white-duration"></div>
+                            <div class="hover-duration">
+                                <div class="white-duration"></div>
+                            </div>
                             <span class="white ml small-fs">4:35</span>
                         </div>
                     </div>
@@ -184,7 +203,9 @@
                             <i class="fas fa-desktop ml-1"></i>
                             <i class="fas fa-volume-up ml-1"></i>
                             <div class="volume-up ml-1"></div>
-                            <div class="white-duration-2"></div>
+                            <div class="hover-duration">
+                                <div class="white-duration-2"></div>
+                            </div>
                         </div>
                     </div>
                 </footer>
