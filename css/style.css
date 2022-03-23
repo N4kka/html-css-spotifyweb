@@ -1,7 +1,7 @@
 /* ROOT */
 :root {
     /* SIZES */
-    --header-height: 80px;
+    --header-height: 70px;
     --footer-height: 97px;
 }
 
@@ -212,9 +212,9 @@ nav {
 /* MAIN-CONTENT */
 .main-content {
     width: calc(100% - 200px);
-    height: calc(100vh - var(--header-height) - var(--footer-height));
+    height: calc(101vh - var(--header-height) - var(--footer-height));
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: 200px;
     overflow-y: auto;
     background-color: #141922;
@@ -244,7 +244,7 @@ nav {
     margin: 1em 1em;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 701px) {
     .main-content {
         height: calc(101vh - var(--header-height) - var(--footer-height));
     }
@@ -265,6 +265,10 @@ nav {
     .menu h2 {
         font-size: 22px;
     }
+}
+
+@media screen and (min-width: 601px) {
+    
 }
 /* RECENTLY PLAYED */
 .recently-played {
@@ -311,7 +315,7 @@ nav {
     opacity: 1;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 701px) {
     .recently-played {
         display: flex;
         flex-direction: row;
@@ -362,7 +366,7 @@ nav {
     margin: .5em 0 2em ;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 701px) {
     .created-for h2 {
         font-size: 18px;
     }
@@ -395,7 +399,7 @@ nav {
     border-radius: 50%;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 701px) {
     .release {
         width: 25%;
     }
@@ -456,7 +460,7 @@ footer {
     cursor: pointer;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 701px) {
     .current-song {
         transform: scale(.9);
     }
@@ -509,7 +513,7 @@ footer {
     cursor: pointer;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 701px) {
     .song-duration {
         width: 260px;
     }
@@ -543,7 +547,7 @@ footer {
     cursor: pointer;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (min-width: 701px) {
     .volume {
         margin-right: 5px;
     }
