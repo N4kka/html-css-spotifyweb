@@ -20,6 +20,7 @@ html {
 
 main {
     position: relative;
+    height: 100vh;
 }
 
 .container {
@@ -231,9 +232,6 @@ nav {
     cursor: pointer;
 }
 
-/* .menu ul :first-child {
-    border-bottom: 3px solid yellowgreen;
-} */
 .bb {
     border-bottom: 2px solid yellowgreen;
 }
@@ -246,6 +244,28 @@ nav {
     margin: 1em 1em;
 }
 
+@media screen and (max-width: 700px) {
+    .main-content {
+        height: calc(101vh - var(--header-height) - var(--footer-height));
+    }
+
+    .menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 11px;
+        font-weight: 700;
+        margin: 16px 0 16px 16px;
+    }
+
+    .menu ul :last-child {
+        margin-top: 2em;
+
+    }
+
+    .menu h2 {
+        font-size: 22px;
+    }
+}
 /* RECENTLY PLAYED */
 .recently-played {
     display: flex;
@@ -272,6 +292,10 @@ nav {
     margin: 0 0 .3em 0;
 }
 
+.st {
+    font-size: 18px;
+}
+
 #first {
     margin-left: 1em;
 }
@@ -287,6 +311,48 @@ nav {
     opacity: 1;
 }
 
+@media screen and (max-width: 700px) {
+    .recently-played {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .last-played {
+        width: calc(100%/4 - 1em);
+    }
+
+    .media {
+        font-size: 14px;
+        margin-right: 9px;
+        margin-bottom: 1.5em;
+    }
+
+    .media .st {
+        font-size: 11px;
+        font-weight: 700;
+    }
+
+    .media p {
+        font-size: 11px;
+        font-weight: 500;
+    }
+
+    .media .stein {
+        font-size: 9px;
+    }
+
+    .hover-btn {
+        font-size: 2em;
+        top: 8%;
+        left: 35%;
+    }
+
+    .space {
+        margin-left: 1em;
+    }
+}
+
 /* MIXED PLAYLIST */
 .created-for {
     margin-left: 1em;
@@ -294,6 +360,16 @@ nav {
 
 .created-for p {
     margin: .5em 0 2em ;
+}
+
+@media screen and (max-width: 700px) {
+    .created-for h2 {
+        font-size: 18px;
+    }
+
+    .created-for p {
+        font-size: 10px;
+    }
 }
 
 .mixed {
@@ -319,12 +395,24 @@ nav {
     border-radius: 50%;
 }
 
+@media screen and (max-width: 700px) {
+    .release {
+        width: 25%;
+    }
+
+    .release h4 {
+        font-size: 12px;
+        margin-left: 14px;
+    }
+}
+
 /* FOOTER */
 footer {
     width: 100%;
     height: var(--footer-height);
     display: flex;
     background-color: #282828;
+    z-index: 2;
 }
 
 .current-song {
@@ -367,6 +455,20 @@ footer {
     color: white;
     cursor: pointer;
 }
+
+@media screen and (max-width: 700px) {
+    .current-song {
+        transform: scale(.9);
+    }
+
+    .current-song img {
+        margin: 1.5em 1em 1.5em 0;
+    }
+
+    .current-song .ml-3 {
+        margin-left: 1em;
+    }
+}
 /* CENTER FOOTER-COL */
 .play-stop i {
     margin: .5em;
@@ -406,6 +508,19 @@ footer {
     border: 2px solid yellowgreen;
     cursor: pointer;
 }
+
+@media screen and (max-width: 700px) {
+    .song-duration {
+        width: 260px;
+    }
+
+    .white-duration {
+        position: absolute;
+        bottom: 5px;
+        left: 44px;
+    }
+
+}
 /* RIGHT FOOTER-COL */
 .volume-up {
     width: 100px;
@@ -426,4 +541,16 @@ footer {
 .hover-duration :hover {
     border: 2px solid yellowgreen;
     cursor: pointer;
+}
+
+@media screen and (max-width:700px) {
+    .volume {
+        margin-right: 5px;
+    }
+
+    .white-duration-2 {
+        position: absolute;
+        bottom: 35px;
+        right: 80px;
+    }
 }
